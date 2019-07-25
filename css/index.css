@@ -134,50 +134,130 @@ html,
 body {
   height: 100%;
 }
-/* Main Content */
 .sections {
   width: 70%;
-  font-size: 2rem;
-  padding-left: 5%;
+  padding-top: 5%;
   margin: 0 auto;
   height: 100%;
+  color: #B8D0EB;
 }
-.container {
-  height: 100%;
+.sectionH2 {
+  font-size: 2rem;
+  padding-bottom: 2rem;
 }
-.container nav {
+.sectionP {
+  font-size: 1.2rem;
+}
+nav {
   display: flex;
   justify-content: center;
   flex-flow: column wrap;
   vertical-align: top;
   height: 100%;
   width: 20%;
-  overflow: auto;
   font-size: 2rem;
   padding-left: 5%;
   position: fixed;
   background: #5E42A6;
 }
-.container nav a {
+@media (max-width: 500px) {
+  nav {
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-flow: row nowrap;
+    height: 5%;
+    width: 100%;
+    font-size: 1.2rem;
+  }
+}
+nav h1 {
+  font-size: 2rem;
+  color: black;
+  margin-bottom: 100px;
+}
+@media (max-width: 500px) {
+  nav h1 {
+    display: none;
+  }
+}
+nav a {
   text-decoration: none;
   padding-top: 20px;
   width: 100%;
   color: white;
 }
-.container nav a:hover {
-  color: black;
+nav a:hover {
+  color: #2D3142;
+  padding-left: 25px;
+  border-left: 4px solid #B8D0EB;
 }
-.container .features {
-  width: 70%;
-  font-size: 2rem;
-  padding-left: 5%;
-  margin: 0 auto;
+@media (max-width: 500px) {
+  nav a:hover {
+    padding-left: 0px;
+    border: none;
+  }
+}
+body {
+  background: #2D3142;
+}
+body .container {
   height: 100%;
 }
-.container .about-us {
+body .container #home {
   width: 70%;
-  font-size: 2rem;
-  padding-left: 5%;
+  padding-top: 5%;
   margin: 0 auto;
   height: 100%;
+  color: #B8D0EB;
+  background: #2D3142;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  body .container #home {
+    padding-top: 60px;
+  }
+}
+body .container #home h2 {
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+body .container #home p {
+  font-size: 1.2rem;
+}
+body .container #features {
+  width: 70%;
+  padding-top: 5%;
+  margin: 0 auto;
+  height: 100%;
+  color: #B8D0EB;
+  background: #2D3142;
+  text-align: center;
+}
+body .container #features h2 {
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+body .container #features p {
+  font-size: 1.2rem;
+}
+body .container #about-us {
+  width: 70%;
+  padding-top: 5%;
+  margin: 0 auto;
+  height: 100%;
+  color: #B8D0EB;
+  background: #2D3142;
+  text-align: center;
+}
+body .container #about-us h2 {
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+body .container #about-us p {
+  font-size: 1.2rem;
+}
+body .container footer {
+  text-align: center;
+  background: #2D3142;
+  color: white;
 }
