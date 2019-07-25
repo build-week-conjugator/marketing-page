@@ -163,7 +163,7 @@ nav {
   font-size: 2rem;
   padding-left: 5%;
   position: fixed;
-  background: #5E42A6;
+  background: linear-gradient(#5E42A6, #8871c2);
 }
 @media (max-width: 500px) {
   nav {
@@ -195,6 +195,7 @@ nav a:hover {
   color: #2D3142;
   padding-left: 25px;
   border-left: 4px solid #B8D0EB;
+  transition: 0.5s all linear;
 }
 @media (max-width: 500px) {
   nav a:hover {
@@ -205,13 +206,13 @@ nav a:hover {
 html {
   scroll-behavior: smooth;
 }
-body {
+html body {
   background: #2D3142;
 }
-body .container {
+html body .container {
   height: 100%;
 }
-body .container #home {
+html body .container #home {
   width: 70%;
   padding-top: 5%;
   margin: 0 auto;
@@ -221,23 +222,23 @@ body .container #home {
   text-align: center;
 }
 @media (max-width: 500px) {
-  body .container #home {
+  html body .container #home {
     padding-top: 15%;
   }
 }
 @media (max-width: 500px) {
-  body .container #home {
+  html body .container #home {
     padding-top: 60px;
   }
 }
-body .container #home h2 {
+html body .container #home h2 {
   font-size: 2rem;
   padding-bottom: 2rem;
 }
-body .container #home p {
+html body .container #home p {
   font-size: 1.2rem;
 }
-body .container #features {
+html body .container #features {
   width: 70%;
   padding-top: 5%;
   margin: 0 auto;
@@ -247,18 +248,18 @@ body .container #features {
   text-align: center;
 }
 @media (max-width: 500px) {
-  body .container #features {
+  html body .container #features {
     padding-top: 15%;
   }
 }
-body .container #features h2 {
+html body .container #features h2 {
   font-size: 2rem;
   padding-bottom: 2rem;
 }
-body .container #features p {
+html body .container #features p {
   font-size: 1.2rem;
 }
-body .container #about-us {
+html body .container #about-us {
   width: 70%;
   padding-top: 5%;
   margin: 0 auto;
@@ -268,18 +269,18 @@ body .container #about-us {
   text-align: center;
 }
 @media (max-width: 500px) {
-  body .container #about-us {
+  html body .container #about-us {
     padding-top: 15%;
   }
 }
-body .container #about-us h2 {
+html body .container #about-us h2 {
   font-size: 2rem;
   padding-bottom: 2rem;
 }
-body .container #about-us p {
+html body .container #about-us p {
   font-size: 1.2rem;
 }
-body .container footer {
+html body .container footer {
   text-align: center;
   background: #2D3142;
   color: white;
