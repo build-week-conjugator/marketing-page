@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    font-family: 'Open Sans', sans-serif;
     body {
         background:@Gunmetal;
         .container {
@@ -9,7 +10,7 @@ html {
                 background: @Gunmetal;
                 text-align: center;
                 @media @mobile {
-                    padding-top: 60px;
+                    padding-top: 20%;
                 }
                 h2 {
                 .sectionH2();
@@ -28,6 +29,19 @@ html {
                 p {
                     .sectionP();
                 }
+                .app-image {
+                    max-width: 100%;
+                    height: auto;
+                    margin: 0 auto;
+                }
+                ul {
+                    font-size: 1.5rem;
+                    margin-top: 5%;
+                    line-height: 1.5;
+                    text-align: left;
+                    list-style-type: circle;
+                    list-style-position: inside;
+                }
             }
             #about-us {
                 .sections();
@@ -38,6 +52,19 @@ html {
                 }
                 p {
                     .sectionP();
+                }
+                .about-us-text {
+                    display: flex;
+                    @media @mobile {
+                        flex-direction: column;
+                    }
+                    justify-content: space-around;
+                    img {
+                        max-width: 100%;
+                        height: auto;
+                        border-radius: 50%;
+                        padding: 10%;
+                    }
                 }
             }
             footer {
