@@ -34,13 +34,23 @@ html {
                     height: auto;
                     margin: 0 auto;
                 }
-                ul {
+                .feature-text {
+                   display: flex;
+                   align-items: center;
+                   justify-content: center;
+                   @media @mobile {
+                       display: block;
+                   }
+                    ul {
                     font-size: 1.5rem;
                     margin-top: 5%;
+                    
                     line-height: 1.5;
                     text-align: left;
                     list-style-type: circle;
                     list-style-position: inside;
+                    
+                    }
                 }
             }
             #about-us {
@@ -56,12 +66,11 @@ html {
                 .about-us-text {
                     display: flex;
                     @media @mobile {
-                        flex-direction: column;
+                        flex-flow: column nowrap;
                     }
                     justify-content: space-around;
                     img {
                         max-width: 100%;
-                        height: auto;
                         border-radius: 50%;
                         padding: 10%;
                     }
@@ -71,6 +80,10 @@ html {
                 text-align: center;
                 background: @Gunmetal;
                 color: white;
+                @media @mobile {
+                   margin-top: 100%;
+                }
+               
             }
         }
     }
