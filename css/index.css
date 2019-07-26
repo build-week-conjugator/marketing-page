@@ -137,13 +137,15 @@ body {
 .sections {
   width: 70%;
   padding-top: 5%;
-  margin: 0 auto;
+  margin-left: 25%;
   height: 100%;
   color: #B8D0EB;
+  text-align: center;
 }
 @media (max-width: 500px) {
   .sections {
-    padding-top: 15%;
+    padding-top: 20%;
+    margin: 0 auto;
   }
 }
 .sectionH2 {
@@ -205,6 +207,7 @@ nav a:hover {
 }
 html {
   scroll-behavior: smooth;
+  font-family: 'Open Sans', sans-serif;
 }
 html body {
   background: #2D3142;
@@ -215,7 +218,7 @@ html body .container {
 html body .container #home {
   width: 70%;
   padding-top: 5%;
-  margin: 0 auto;
+  margin-left: 25%;
   height: 100%;
   color: #B8D0EB;
   background: #2D3142;
@@ -223,12 +226,13 @@ html body .container #home {
 }
 @media (max-width: 500px) {
   html body .container #home {
-    padding-top: 15%;
+    padding-top: 20%;
+    margin: 0 auto;
   }
 }
 @media (max-width: 500px) {
   html body .container #home {
-    padding-top: 60px;
+    padding-top: 20%;
   }
 }
 html body .container #home h2 {
@@ -241,7 +245,7 @@ html body .container #home p {
 html body .container #features {
   width: 70%;
   padding-top: 5%;
-  margin: 0 auto;
+  margin-left: 25%;
   height: 100%;
   color: #B8D0EB;
   background: #2D3142;
@@ -249,7 +253,8 @@ html body .container #features {
 }
 @media (max-width: 500px) {
   html body .container #features {
-    padding-top: 15%;
+    padding-top: 20%;
+    margin: 0 auto;
   }
 }
 html body .container #features h2 {
@@ -259,10 +264,23 @@ html body .container #features h2 {
 html body .container #features p {
   font-size: 1.2rem;
 }
+html body .container #features .app-image {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+html body .container #features ul {
+  font-size: 1.5rem;
+  margin-top: 5%;
+  line-height: 1.5;
+  text-align: left;
+  list-style-type: circle;
+  list-style-position: inside;
+}
 html body .container #about-us {
   width: 70%;
   padding-top: 5%;
-  margin: 0 auto;
+  margin-left: 25%;
   height: 100%;
   color: #B8D0EB;
   background: #2D3142;
@@ -270,7 +288,8 @@ html body .container #about-us {
 }
 @media (max-width: 500px) {
   html body .container #about-us {
-    padding-top: 15%;
+    padding-top: 20%;
+    margin: 0 auto;
   }
 }
 html body .container #about-us h2 {
@@ -279,6 +298,21 @@ html body .container #about-us h2 {
 }
 html body .container #about-us p {
   font-size: 1.2rem;
+}
+html body .container #about-us .about-us-text {
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 500px) {
+  html body .container #about-us .about-us-text {
+    flex-direction: column;
+  }
+}
+html body .container #about-us .about-us-text img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  padding: 10%;
 }
 html body .container footer {
   text-align: center;
