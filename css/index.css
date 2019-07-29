@@ -135,7 +135,6 @@ body {
   height: 100%;
 }
 .sections {
-  width: 70%;
   padding-top: 5%;
   margin-left: 25%;
   height: 100%;
@@ -165,7 +164,7 @@ nav {
   overflow: auto;
   font-size: 2rem;
   position: fixed;
-  background-image: linear-gradient(to top right, #5E42A6, #ae8ffd);
+  background-image: linear-gradient(to top right, #483a94, #8e70da);
 }
 @media (max-width: 500px) {
   nav {
@@ -214,7 +213,6 @@ html body .container {
   height: 100%;
 }
 html body .container #home {
-  width: 70%;
   padding-top: 5%;
   margin-left: 25%;
   height: 100%;
@@ -246,13 +244,13 @@ html body .container #home img {
   margin-top: 3%;
 }
 html body .container #features {
-  width: 70%;
   padding-top: 5%;
   margin-left: 25%;
   height: 100%;
   color: #B8D0EB;
   background: #2D3142;
   text-align: center;
+  height: auto;
 }
 @media (max-width: 500px) {
   html body .container #features {
@@ -268,38 +266,50 @@ html body .container #features h2 {
 html body .container #features p {
   font-size: 1.2rem;
 }
-html body .container #features .app-image {
-  max-width: 100%;
-  height: auto;
-  margin: 0 auto;
-}
 html body .container #features .feature-text {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: column nowrap;
+  align-items: flex-start;
+  flex-flow: row wrap;
 }
 @media (max-width: 500px) {
   html body .container #features .feature-text {
     display: block;
   }
 }
+html body .container #features .feature-text .app-image {
+  width: 50%;
+  margin-top: 5%;
+}
+@media (max-width: 500px) {
+  html body .container #features .feature-text .app-image {
+    margin-top: 10%;
+    width: 100%;
+  }
+}
 html body .container #features .feature-text ul {
   font-size: 1.5rem;
   margin-top: 5%;
+  margin-left: 5%;
   line-height: 1.5;
+  width: 40%;
   text-align: left;
   list-style-type: circle;
   list-style-position: inside;
 }
+@media (max-width: 500px) {
+  html body .container #features .feature-text ul {
+    text-align: left;
+    width: 90%;
+  }
+}
 html body .container #about-us {
-  width: 70%;
   padding-top: 5%;
   margin-left: 25%;
   height: 100%;
   color: #B8D0EB;
   background: #2D3142;
   text-align: center;
+  display: inline-block;
 }
 @media (max-width: 500px) {
   html body .container #about-us {
@@ -317,10 +327,11 @@ html body .container #about-us p {
 html body .container #about-us .about-us-text {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 @media (max-width: 500px) {
   html body .container #about-us .about-us-text {
-    flex-flow: column nowrap;
+    display: block;
   }
 }
 html body .container #about-us .about-us-text img {
@@ -329,12 +340,111 @@ html body .container #about-us .about-us-text img {
   padding: 10%;
 }
 html body .container footer {
-  text-align: center;
+  text-align: right;
   background: #2D3142;
   color: white;
 }
 @media (max-width: 500px) {
   html body .container footer {
-    margin-top: 100%;
+    display: block;
+    text-align: center;
+    margin-top: 5%;
   }
+}
+.home-container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  height: 100%;
+  background-image: url("https://liveparker301.com/wp-content/uploads/2018/03/18-CADV-021-Landing-Page-Background-R2.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+@media (max-width: 500px) {
+  .home-container {
+    background-image: linear-gradient(to top, #2c1c8a, #b7afcc);
+  }
+}
+.home-container header {
+  background: white;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  height: 50%;
+  width: 50%;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+}
+@media (max-width: 500px) {
+  .home-container header {
+    flex-flow: column nowrap;
+    width: 70%;
+  }
+}
+.home-container header .image-container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  background: #483a94;
+}
+@media (max-width: 500px) {
+  .home-container header .image-container {
+    width: 100%;
+  }
+}
+.home-container header .image-container img {
+  width: 75%;
+  height: 75%;
+}
+@media (max-width: 500px) {
+  .home-container header .image-container img {
+    width: 80%;
+    height: 85%;
+  }
+}
+.home-container header .image-container p {
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+}
+.home-container header .text-container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-flow: column wrap;
+}
+@media (max-width: 500px) {
+  .home-container header .text-container {
+    width: 100%;
+  }
+}
+.home-container header .text-container h1 {
+  font-size: 1.8rem;
+  color: #2D3142;
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 3%;
+}
+.home-container header .text-container p {
+  font-size: 1.3rem;
+  text-align: center;
+  color: #2D3142;
+}
+.home-container header .text-container a {
+  text-decoration: none;
+  align-self: center;
+  color: #2D3142;
+  padding: 5px 10px 5px 10px;
+  border: 2px solid #2D3142;
+  border-radius: 15px;
+  margin-top: 10%;
+}
+.home-container header .text-container a:hover {
+  background: #2D3142;
+  color: white;
+  transition: 0.6s all linear;
 }

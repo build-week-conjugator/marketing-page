@@ -1,0 +1,90 @@
+.home-container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    height: 100%;
+    // background-image: linear-gradient(to left, #5E42A6, rgb(183, 175, 204));
+    background-image: url("https://liveparker301.com/wp-content/uploads/2018/03/18-CADV-021-Landing-Page-Background-R2.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    @media @mobile {
+        background-image: linear-gradient(to top, #2c1c8a, rgb(183, 175, 204));
+    }
+
+    header {
+        background: white;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: flex-start;
+        height: 50%;
+        width: 50%;
+        box-shadow:0 8px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+
+        @media @mobile {
+            flex-flow: column nowrap;
+            width: 70%;
+        }
+        .image-container {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            background: rgb(72, 58, 148);
+            @media @mobile {
+                width: 100%;
+            }
+            img {
+                width:75%;
+                height: 75%;
+                @media @mobile {
+                    width: 80%;
+                    height: 85%;
+                }
+            }
+            p {
+                font-size: 1.5rem;
+                color: white;
+                text-align: center;
+            }
+        }
+        .text-container {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-flow: column wrap;
+            @media @mobile {
+                width: 100%;
+            }
+            h1 {
+                font-size: 1.8rem;
+                color: @Gunmetal;
+                text-align: center;
+                margin-top: 10%;
+                margin-bottom: 3%;
+            }
+            p {
+                font-size: 1.3rem;
+                text-align: center;
+                color: @Gunmetal;
+            }
+            a {
+                text-decoration: none;
+                align-self: center;
+                color: @Gunmetal;
+                padding: 5px 10px 5px 10px;
+                border: 2px solid @Gunmetal;
+                border-radius: 15px;
+                margin-top: 10%;
+                &:hover {
+                    background: @Gunmetal;
+                    color: white;
+                    transition: .6s all linear;
+                }
+            }
+        }
+    }
+}
