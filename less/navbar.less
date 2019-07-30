@@ -18,6 +18,14 @@
         width: 100%;
         font-size: 1.2rem;
     }
+    @media @tablet {
+        align-items: flex-start;
+        justify-content: space-evenly;
+        flex-flow: row nowrap;
+        height: 5%;
+        width: 100%;
+        font-size: 1.2rem;
+    }
     a {
         text-decoration: none;
         padding-top: 20px;
@@ -32,12 +40,19 @@
                 padding-left: 0px;
                 border: none;
             }
+            @media @tablet {
+                padding-left: 0px;
+                border: none;
+            }
         }
     }
     img {
         width:100%;
         display: inline-block;
         @media @mobile {
+            display: none;
+        }
+        @media @tablet {
             display: none;
         }
     }

@@ -32,25 +32,43 @@ html {
                 h2 {
                     .sectionH2();
                     margin-top: 2%;
+                    @media @tablet {
+                        padding: 0;
+                        margin: 0;
+                    }
                 }
                 p {
                     .sectionP();
                 }
-             
+                @media @tablet {
+                    margin: 0 auto;
+                    padding-top: 15%;
+                } 
+                @media @mobile {
+                    margin: 0 auto;
+                    padding-top: 20%;
+                }
                 .feature-text {
                     display: flex;
                     align-items: flex-start;
                     flex-flow: row wrap;
                    @media @mobile {
-                       display:block;
-                   } 
+                       display: block;
+                   }
+                   @media @tablet {
+                       flex-flow: column wrap;
+                       align-items: center;
+                   }
                     .app-image {
                     width: 50%;
                     margin-top: 5%;
-
                         @media @mobile {
                             margin-top: 10%;
                             width: 100%;
+                        }
+                        @media @tablet {
+                            margin-top: 10%;
+                            width: 75%;
                         }
                     }
                     ul {
@@ -62,20 +80,32 @@ html {
                     text-align: left;
                     list-style-type: circle;
                     list-style-position: inside;
-                    
                     @media @mobile{
-                    text-align: left;
-                    width:90%;
-                    }
-                    
+                        text-align: left;
+                        width:90%;
+                        }
+                    @media @tablet {
+                        font-size: 1.2rem;
+                        text-align: left;
+                        width:90%;
+                        }
                     }
                 }
             }
             #about-us {
+                @media @mobile {
+                    padding-top: 20%;
+                    margin: 0 auto;
+                    display: inline-block;
+                    width: 100%
+                }
+                @media @tablet {
+                    padding-top: 15%;
+                    margin: 0 auto;
+                }
                 .sections();
                 background: @Gunmetal;
                 text-align: center;
-                display: inline-block;
                 h2 {
                     .sectionH2();
                 }
@@ -88,7 +118,9 @@ html {
                     align-items: center;
                     @media @mobile {
                         display: block;
-                        
+                    }
+                    @media @tablet {
+                        margin: 0 auto;
                     }
                     
                     img {
@@ -99,12 +131,11 @@ html {
                 }
             }
             footer {
-                text-align: right;
+                text-align: center;
                 background: @Gunmetal;
                 color: white;
                 @media @mobile {
-                   display:block;
-                   text-align: center;
+                   display: block;
                    margin-top: 5%;
                 }
                
