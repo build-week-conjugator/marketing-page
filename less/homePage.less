@@ -4,13 +4,9 @@
     justify-content: center;
     flex-flow: column wrap;
     height: 100%;
-    // background-image: linear-gradient(to left, #5E42A6, rgb(183, 175, 204));
-    background-image: url("https://liveparker301.com/wp-content/uploads/2018/03/18-CADV-021-Landing-Page-Background-R2.png");
+    background-image: url("/photos/bg.png");
     background-repeat: no-repeat;
-    background-size: 100%;
-    @media @mobile {
-        background-image: linear-gradient(to top, #2c1c8a, rgb(183, 175, 204));
-    }
+    background-size: cover;
 
     header {
         background: white;
@@ -20,8 +16,11 @@
         height: 50%;
         width: 50%;
         box-shadow:0 8px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
-
         @media @mobile {
+            flex-flow: column nowrap;
+            width: 70%;
+        }
+        @media @tablet {
             flex-flow: column nowrap;
             width: 70%;
         }
@@ -35,12 +34,21 @@
             @media @mobile {
                 width: 100%;
             }
+            @media @tablet {
+                width: 100%;
+            }
             img {
-                width:75%;
-                height: 75%;
+                width: 75%;
+                margin-top: 10rem;
+                @media @tablet {
+                    width: 50%;
+                    margin-top: 0rem;
+                    margin-bottom: -10%;
+                }
                 @media @mobile {
                     width: 80%;
-                    height: 85%;
+                    margin-top: 0rem;
+                    margin-bottom: -10%;
                 }
             }
             p {
@@ -58,6 +66,9 @@
             flex-flow: column wrap;
             @media @mobile {
                 width: 100%;
+            }
+            @media @tablet {
+                width: 100%
             }
             h1 {
                 font-size: 1.8rem;
@@ -78,7 +89,6 @@
                 padding: 5px 10px 5px 10px;
                 border: 2px solid @Gunmetal;
                 border-radius: 15px;
-                margin-top: 10%;
                 &:hover {
                     background: @Gunmetal;
                     color: white;
