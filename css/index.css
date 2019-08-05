@@ -459,14 +459,12 @@ html body .container footer {
   .home-container header .image-container img {
     width: 50%;
     margin-top: 0rem;
-    margin-bottom: -10%;
   }
 }
 @media (max-width: 500px) {
   .home-container header .image-container img {
-    width: 80%;
+    width: 90%;
     margin-top: 0rem;
-    margin-bottom: -10%;
   }
 }
 .home-container header .image-container p {
