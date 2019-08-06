@@ -175,7 +175,7 @@ nav {
     align-items: flex-start;
     justify-content: space-evenly;
     flex-flow: row nowrap;
-    height: 5%;
+    height: 50px;
     width: 100%;
     font-size: 1.2rem;
   }
@@ -204,7 +204,7 @@ nav a:hover {
   }
 }
 nav img {
-  width: 100%;
+  width: 90%;
   display: inline-block;
 }
 @media (max-width: 500px) {
@@ -459,18 +459,21 @@ html body .container footer {
   .home-container header .image-container img {
     width: 50%;
     margin-top: 0rem;
+    padding-top: 2%;
   }
 }
 @media (max-width: 500px) {
   .home-container header .image-container img {
     width: 90%;
     margin-top: 0rem;
+    padding-top: 2%;
   }
 }
 .home-container header .image-container p {
   font-size: 1.5rem;
   color: white;
   text-align: center;
+  padding-bottom: 2%;
 }
 .home-container header .text-container {
   width: 50%;
@@ -494,7 +497,6 @@ html body .container footer {
   font-size: 1.8rem;
   color: #2D3142;
   text-align: center;
-  margin-top: 10%;
   margin-bottom: 3%;
 }
 .home-container header .text-container p {
